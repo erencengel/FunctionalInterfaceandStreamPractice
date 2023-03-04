@@ -1,7 +1,5 @@
 package day1;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import java.util.Arrays;
 import java.util.function.Function;
 import java.util.stream.Collectors;
