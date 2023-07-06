@@ -1,15 +1,22 @@
 package day3;
 
+import java.util.Arrays;
+
 public class practice3 {
 
     public static void main(String[] args) {
-        int x = 10;
 
-        if(x == 10){
-            //int x = 20;
-            System.out.println(x);
+        getStrings("Eren", "Alperen", "Şerife", "Aslıhan");
+
+    }
+
+    public static void getStrings(String...str){
+        System.out.println("str.length = " + str.length);
+        System.out.println("Arrays.toString(str) = " + Arrays.toString(str));
+        for (int i = 0; i<str.length;i++){
+            System.out.println("str[i] = " + str[i]);
         }
-        System.out.println(x);
+        Arrays.stream(str).forEach(n -> System.out.println(n+ " this is varargs"));
     }
 
 }
